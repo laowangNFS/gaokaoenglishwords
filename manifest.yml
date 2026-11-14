@@ -12,3 +12,6 @@ version: 1.0.1.0
 author: Lao_Wang_
 icon: icon.png
 readme: README.md
+repoName: gaokaoenglishwords
+repoOwener: laowangNFS
+assetsRoot: master
