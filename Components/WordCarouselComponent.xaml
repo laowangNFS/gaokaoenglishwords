@@ -1,0 +1,51 @@
+<ci:ComponentBase
+    x:TypeArguments="local:WordCarouselComponentSettings"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ci="http://classisland.tech/schemas/xaml/core"
+    xmlns:local="clr-namespace:Englishwordsshow.Components"
+    x:Class="Englishwordsshow.Components.WordCarouselComponent"
+    FontFamily="Microsoft YaHei UI">
+    <Grid ColumnDefinitions="*,1,*" Margin="4,0">
+        <StackPanel Grid.Column="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    Margin="4,0">
+            <TextBlock x:Name="Word1Text"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Stretch"
+                       FontWeight="SemiBold"
+                       TextTrimming="CharacterEllipsis"
+                       MaxLines="1" />
+            <TextBlock x:Name="Detail1Text"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Stretch"
+                       TextWrapping="Wrap"
+                       MaxLines="2"
+                       TextTrimming="CharacterEllipsis" />
+        </StackPanel>
+
+        <Border Grid.Column="1"
+                Background="#33808080"
+                HorizontalAlignment="Stretch"
+                Margin="0,4" />
+
+        <StackPanel Grid.Column="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    Margin="4,0">
+            <TextBlock x:Name="Word2Text"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Stretch"
+                       FontWeight="SemiBold"
+                       TextTrimming="CharacterEllipsis"
+                       MaxLines="1" />
+            <TextBlock x:Name="Detail2Text"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Stretch"
+                       TextWrapping="Wrap"
+                       MaxLines="2"
+                       TextTrimming="CharacterEllipsis" />
+        </StackPanel>
+    </Grid>
+</ci:ComponentBase>
