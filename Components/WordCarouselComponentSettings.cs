@@ -32,7 +32,7 @@ public class WordCarouselComponentSettings : INotifyPropertyChanged
         set
         {
             // 组件内容高度只有约 55px，字号过大会把中文释义挤出可视区域。
-            var clamped = Math.Clamp(value, 12, 20);
+            var clamped = Math.Clamp(value, 14, 22);
             if (Math.Abs(_fontSize - clamped) < 0.01) return;
             _fontSize = clamped;
             OnPropertyChanged();
